@@ -1,0 +1,122 @@
+/* Existing CSS */
+.contact {
+    width: 100%;
+    height: auto; /* Change to auto to adjust height based on content */
+    background: var(--primaryColor);
+    color: white;
+    padding: 20px 0; /* Add padding to ensure content has space */
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Add flex-wrap to handle smaller screens */
+}
+
+.contact .container h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-top: 20px !important;
+}
+
+.contact .container .iconContact {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.iconcontact {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact .container .social {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact .container .socialIcon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact .container p {
+    margin-bottom: 20px;
+}
+
+.iconContact a {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Responsive CSS */
+/* Extra small devices (up to 575px) */
+@media (max-width: 575px) {
+    .contact .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contact .container h2 {
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .contact .container .iconContact,
+    .contact .container .social {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Small devices (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .contact .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contact .container h2 {
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .contact .container .iconContact,
+    .contact .container .social {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Medium devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact .container h2 {
+        font-size: 22px;
+        padding-top: 30px;
+    }
+    .contact .container .iconContact,
+    .contact .container .social {
+        gap: 30px;
+    }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+    .contact .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact .container h2 {
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .contact .container .iconContact,
+    .contact .container .social {
+        gap: 40px;
+    }
+}
